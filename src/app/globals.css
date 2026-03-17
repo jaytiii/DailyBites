@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-db-bg text-db-textMain font-sans antialiased;
+  }
+
+  a {
+    @apply text-db-accentStrong underline-offset-2 hover:text-db-accent;
+  }
+
+  /* Import display font from Google Fonts */
+  @font-face {
+    font-family: "Plus Jakarta Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("https://fonts.gstatic.com/s/plusjakartasans/v8/4UaDrE5TqRBjGj-1-1aA9k5NjZ0.woff2")
+      format("woff2");
+  }
+}
+
